@@ -16,28 +16,28 @@ To determine whether two files are identical or have been modified by comparing 
 1. **List files**
    ```bash
    ls
-2.View file contents
-
-cat file1.txt
-cat file2.txt
-
-3.Generate SHA-256 hashes
-
+2.**View file contents**
+   ```bash
+   cat file1.txt
+   cat file2.txt
+ ```
+3.**Generate SHA-256 hashes**
+ ```bash
 sha256sum file1.txt
 sha256sum file2.txt
 
-
-4.Save hash values
-
+ ```
+4.**Save hash values**
+ ```bash
 sha256sum file1.txt >> file1hash
 sha256sum file2.txt >> file2hash
-
-
-5.Compare hashes
-
+```
+5.**Compare hashes**
+```bash
 cmp file1hash file2hash
-
+```
 
 Result:
-
+```bash
 file1hash file2hash differ: char 1, line 1
+```
